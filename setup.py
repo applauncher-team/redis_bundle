@@ -6,7 +6,7 @@ with open('requirements.txt') as fp:
 setup(
     name='redis_bundle',
     packages=['redis_bundle'],
-    version='0.1',
+    version='0.2',
     description='Redis support for applauncher',
     author='Alvaro Garcia Gomez',
     author_email='maxpowel@gmail.com',
