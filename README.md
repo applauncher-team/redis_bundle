@@ -22,18 +22,18 @@ redis:
   hostname: 'localhost'
   database: 0
 ```
+You can use all parameters supported by redis.Redis
 
 Using it
 -----------------
-Inject RedisManager
+Inject Redis
 
 ```python
 import inject
-from redis_bundle import RedisManager
-redis_manager = inject.instance(RedisManager)
+from redis import Redis
+redis = inject.instance(Redis)
 
-# Then use it as StrictRedis (its a wrapper) object (https://pypi.python.org/pypi/redis)
-redis_manager.set('foo', 'bar')
-redis_manager.get('foo')
+redis.set('foo', 'bar')
+redis.get('foo')
 
 ```
